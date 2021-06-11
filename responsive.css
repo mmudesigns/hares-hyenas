@@ -1,0 +1,126 @@
+@media screen and (min-width: 450pt) {
+
+    .hero-text {
+        font-size: 10vw;
+        line-height: 15vw;
+        /*font-size: 50pt;
+        line-height: 70pt;*/
+    }
+
+    .altlayer {
+        top: 2vw;
+        left: 10vw;
+    }
+
+    #hero-image-small {
+        display: none;
+    }
+
+    #hero-image-big {
+        display:inline;
+    }
+
+    .hero img {
+        /*min-height: 50vh;*/
+        object-fit: cover;
+    }
+
+    .shop-description h2 {
+        max-width: 222pt;
+    }
+
+    .visit {
+        bottom: 3vw;
+    }
+
+    h2 {
+        margin: 10pt;
+    }
+
+    .products-display {
+        max-width: 550pt;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-pic {
+     height: 220pt;
+     object-fit: cover;  
+     width:auto; 
+    }
+
+    .left-right {
+        padding: 0 15pt;
+    }
+
+    .ackn-country {
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+
+}
+
+@media screen and (min-width: 600pt) {
+    #paymentresponsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cart-float {
+        display: none;
+    }
+
+    #addcartbutton {
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: var(--text-xl)
+    }
+}
+
+
+@media screen and (min-width: 700pt) {
+
+    .visit {
+        bottom: 5vw;
+    }
+
+    .hero-text {
+        font-size: 60pt;
+        line-height: 93pt;
+    }
+
+    .altlayer {
+        top: 5vw;
+        left: 10vw;
+    }
+
+    .hiddenmenu {
+        display: inline-block;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .centrealt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-justify: center;
+        text-align: center;
+      }
+}
+
+@media screen and (min-width: 800pt) {
+
+    .hero img {
+        min-height: none;
+        max-width: 870pt;
+    }
+}

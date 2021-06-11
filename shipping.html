@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shipping options">
+    <meta name="author" content="Melana Uceda">
+    <title>Shipping options</title>
+
+    <link rel="stylesheet" href="master.css">
+    <script src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="stack" onload="processName()">
+    <h1>Sign up to Hares and Hyenas</h1>
+    <header class="header">
+        <nav class="cluster">
+            <a href="index.html"><img src="images/logowhite.svg" alt="logo" class="logo"></a>
+            <ul class="cluster">
+                <li><a href="searchresult.html"><img src="images/search.svg" alt="search" class="icon"></a></li>
+                <li>
+                    <form action="searchresult.html" method="GET" class="hiddenmenu">
+                        <!--<i><img src="images/search.svg" alt="search" id="searchicon"></i>-->
+                        <input class="input no-border margin-below0" placeholder="Search for title, author, ISBN">
+                    </form>
+                </li>
+                <li class="hiddenmenu">
+                    <a href="signinorup.html"><img src="images/personicon.svg" class="icon"></a>
+                </li>
+                <li><a href="cart.html"><img src="images/cart.svg" alt="shopping cart" class="icon"></a></li>
+                <li><img src="images/burger.svg" alt="menu button" class="icon burger">
+                    <p class="text-md contrast hiddenmenu margin-below0">Menu <strong>V</strong></p>
+                        <!--<img src="images/point down.svg" alt="point down" class="iconalt">-->
+                    <ul class="menu contrast">
+                        <!-- don't forget the x! -->
+                        <li><h3>SHOP.</h3>
+                            <ul>
+                                <li><a href="#"><p class="menu-subhead">Books</p></a></li>
+                                    <ul>
+                                        <li><a href="#"><p class="menu-item">Fiction</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Nonfiction</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Children & Young Adult</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Comics</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Just Queer</p></a></li>
+                                    </ul>
+                                <li><a href="#"><p class="menu-subhead">CD/Vinyl</p></a></li>
+                                <li><a href="#"><p class="menu-subhead">DVD</p></a></li>
+                                <li><a href="#"><p class="menu-subhead">Merchandise</p></a></li>
+                            </ul></li>
+                        <li><a href="#"><h3>VISIT & CONTACT.</h3></a></li>
+                        <li><a href="#"><h3>BOOK OUR VENUE.</h3></a></li>
+                        <li><a href="#"><h3>EVENTS.</h3></a></li>
+                        <li><a href="signinorup.html"><h3>YOUR ACCOUNT.</h3></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+    <div class="top-guide left-justify">
+        <p>Cart > <strong>Shipping</strong> > Payment</p>
+    </div>
+
+    <div class="centre">
+    <div class="form-width">
+        <h3 class="label-justify">SHIPPING</h3>
+
+        <div id="delivery-ship">
+            <div class="label-justify">
+                <p class="text-md"><strong>Delivery method</strong></p>
+                </div>
+        <div class="altclustercol bottom-margin">
+
+            <div>
+            <div class="ship-option label-justify" onclick="revealShipping(), buttonDisactivate()">
+                <div class="dot dot-red dot-red-selected"></div>
+                <p>Ship</p>
+            </div>
+            </div>
+
+            <div class="ship-option label-justify" onclick="revealPickup(), buttonReady()">
+                <div class="dot dot-red"></div>
+                <p>Pick up in store</p>
+            </div>
+        </div>
+
+        <form>
+            <div>
+                <p class="text-md label-justify"><strong>Shipping Address</strong></p>
+                <div class="label-justify">
+                    <label for="customername-id">Name:</label>
+                </div>
+                    <input class="input" id="customername-id" name="customername-id">
+            </div>
+
+            <div>
+                <div class="label-justify">
+                    <label for="address-id">Address:</label>
+                </div>
+                    <input class="input" id="address-id">
+            </div>
+
+            <div class="cluster">
+                <div>
+                    <div class="label-justify">
+                        <label for="country-id">Country:</label>
+                    </div>
+                        <input class="third-input" id="country-id">
+                </div>
+
+                <div>
+                    <div class="label-justify">
+                        <label for="state-id">State:</label>
+                    </div>
+                        <input class="third-input" id="state-id">
+                </div>
+
+                <div>
+                    <div class="label-justify">
+                        <label for="postcode-id">Postcode:</label>
+                    </div>
+                        <input class="third-input" id="postcode-id" type="number">
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="label-justify">
+                    <label for="phone-id">Phone:</label>
+                </div>
+                    <input type="number" class="input" id="phone-id" oninput="buttonReady()">
+            </div>
+            
+            <!--<div class="cluster">
+                <a href="checkout.html">
+                    <button type="submit" class="btn btn-colour-secondary">Continue to payment</button>
+                </a>
+            </div>-->
+        </form>
+
+    </div>
+
+    <div id="delivery-pickup">
+        <div class="label-justify cluster bottom-margin delivery-method">
+            <p class="text-md"><strong>Delivery method</strong><br><br></p>
+            <div class="ship-option label-justify" onclick="revealShipping(), buttonDisactivate()">
+                <div class="dot dot-red"></div>
+                <p>Ship</p>
+            </div>
+
+            <div class="ship-option label-justify" onclick="revealPickup(), buttonReady()">
+                <div class="dot dot-red dot-red-selected"></div>
+                <p>Pick up in store</p>
+            </div>
+        </div>
+        <p class="text-black text-md remove-bottom-margin">Pick up your items in our store at</p>
+        <p class="text-md remove-bottom-margin"><strong>63 Johnston Street, Fitzroy VIC 3065.</strong></p>
+        <a href="https://maps.google.com/?ll=-37.79774490358528,144.97691791356357" target="_blank"><p class="text-black bottom-margin">Click here for directions</p></a>
+        </div>
+    </div>
+
+    <div class="cluster form-width remove-bottom-margin">
+        <div>
+            <h4>Total:</h4>
+        </div>
+        <div class="right-justify remove-bottom-margin" id="noshippingcost">
+            <h4>$00.00</h4>
+            <p><strong>AUD</strong></p>
+        </div>
+    </div>
+
+    <div class="cluster bottom-margin">
+        <a href="cart.html" class="btn btn-border-secondary">Back  to cart</a>
+        <a href="payment.html" class="btn btn-colour-secondary" id="colour-button">Continue to payment</a>
+        <div class="btn btn-disabled" id="grey-button">Continue to payment</div>
+    </div>
+
+    </div>
+</div>
+
+    <footer class="stack footer">
+        <div class="newsletter contrast">
+            <h4>NEWSLETTER.</h4>
+            <p>We'll send you updates on books, literary culture, and resources for the queer community.<br><br></p>
+            <form action="#" method="GET">
+                <div>
+                    <div class="label-justify">
+                        <label class="contrast">Name:</label>
+                    </div>
+                    <input class="input no-border">
+                </div>
+
+                <div>
+                    <div class="label-justify">
+                        <label class="contrast">Email: </label>
+                    </div>
+                        <input class="input no-border">
+                </div>
+
+                    <button type="submit" class="btn btn-colour-secondary">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="contact contrast">
+            <h4>LET'S HEAR FROM YOU.</h4>
+            <h5>PHONE</h5>
+            <p>+ 61 3 9495 6589<br><br></p>
+            <h5>EMAIL</h5>
+            <p>contactus@hares-hyenas.com.au<br><br></p>
+            <h5>ADDRESS</h5>
+            <p>63 Johnston Street, Fitzroy VIC 3065<br><br></p>
+
+            <ul class="altclustercenter">
+                <li><img src="images/fb.svg" alt="Facebook" class="icon"></li>
+                <li><img src="images/twitter.svg" alt="Twitter" class="icon"></li>
+                <li><img src="images/instagram.svg" alt="Instagram" class="icon"></li>
+            </ul>
+
+            <h4>ONLINE SHOPPING.</h4>
+            <p><strong>Your account</strong><br><br><strong>Privacy, security, and ordering<br><br></strong></p>
+        </div>
+
+        <div class="ackn-country">
+            <h5>ACKNOWLEDGEMENT OF COUNTRY.</h5>
+            <p><em>Hares & Hyenas is based on the land of the Wurundjeri people of the Woiwurrung First Nation of the Kulin Nations.<br>We acknowledge Aboriginal and Torres Strait ownership of this place and pay respect to all its First Peoples. Sovereignty of the land was never ceded - always was, always will be Aboriginal land.</em></p>
+        </div>
+
+        <div class="copyright contrast">
+            <p>Design by Melana Uceda<br>(c) Hares & Hyenas 2021</p>
+        </div>
+    </footer>
+
+<!--<script language="JavaScript">
+    function processEmail()
+    {
+      var temp = location.search.substring(1).split("=");
+      email = unescape(temp[1]);
+      document.getElementById(temp[0]).value = email;
+    }
+  </script>-->
+
+</body>
+</html> 

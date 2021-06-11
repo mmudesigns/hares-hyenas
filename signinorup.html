@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in or sign up">
+    <meta name="author" content="Melana Uceda">
+    <title>Sign in or sign up to Hares and Hyenas</title>
+
+    <link rel="stylesheet" href="master.css">
+    <script src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="stack">
+    <h1>Sign in or sign up to Hares and Hyenas</h1>
+    <header class="header">
+        <nav class="cluster">
+            <a href="index.html"><img src="images/logowhite.svg" alt="logo" class="logo"></a>
+            <ul class="cluster">
+                <li><a href="searchresult.html"><img src="images/search.svg" alt="search" class="icon"></a></li>
+                <li>
+                    <form action="searchresult.html" method="GET" class="hiddenmenu">
+                        <!--<i><img src="images/search.svg" alt="search" id="searchicon"></i>-->
+                        <input class="input no-border margin-below0" placeholder="Search for title, author, ISBN">
+                    </form>
+                </li>
+                <li class="hiddenmenu">
+                    <a href="signinorup.html"><img src="images/personicon.svg" class="icon"></a>
+                </li>
+                <li><a href="cart.html"><img src="images/cart.svg" alt="shopping cart" class="icon"></a></li>
+                <li><img src="images/burger.svg" alt="menu button" class="icon burger">
+                    <p class="text-md contrast hiddenmenu margin-below0">Menu <strong>V</strong></p>
+                        <!--<img src="images/point down.svg" alt="point down" class="iconalt">-->
+                    <ul class="menu contrast">
+                        <!-- don't forget the x! -->
+                        <li><h3>SHOP.</h3>
+                            <ul>
+                                <li><a href="#"><p class="menu-subhead">Books</p></a></li>
+                                    <ul>
+                                        <li><a href="#"><p class="menu-item">Fiction</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Nonfiction</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Children & Young Adult</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Comics</p></a></li>
+                                        <li><a href="#"><p class="menu-item">Just Queer</p></a></li>
+                                    </ul>
+                                <li><a href="#"><p class="menu-subhead">CD/Vinyl</p></a></li>
+                                <li><a href="#"><p class="menu-subhead">DVD</p></a></li>
+                                <li><a href="#"><p class="menu-subhead">Merchandise</p></a></li>
+                            </ul></li>
+                        <li><a href="#"><h3>VISIT & CONTACT.</h3></a></li>
+                        <li><a href="#"><h3>BOOK OUR VENUE.</h3></a></li>
+                        <li><a href="#"><h3>EVENTS.</h3></a></li>
+                        <li><a href="signinorup.html"><h3>YOUR ACCOUNT.</h3></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="wrapper centre">
+    <div class="form-width">
+    <h3 class="label-justify">SIGN IN OR SIGN UP</h3>
+    <p class="text-md text-black">Enter your email to sign in or create a new account</p>
+
+    <form action="signup.html" method="GET">
+        <div>
+            <div class="label-justify">
+                <label for="email-id">Email: </label>
+            </div>
+                <input class="input" name="email-id" id="email-id" oninput="buttonReady()">
+        </div>
+        
+        <div class="cluster">
+            <a href="shipping.html" class="btn btn-border-primary">Skip to checkout</a>
+            <button type="submit" class="btn btn-colour-primary" id="colour-button">Submit email</button>
+            <div class="btn btn-disabled" id="grey-button">Submit email</div>
+        </div>
+    </form>
+    </div>
+
+    <a href="cart.html" class="btn btn-border-secondary bottom-margin">Back  to cart</a>
+
+</div>
+
+
+<footer class="stack footer">
+    <div class="newsletter contrast">
+        <h4>NEWSLETTER.</h4>
+        <p>We'll send you updates on books, literary culture, and resources for the queer community.<br><br></p>
+        <form action="#" method="GET">
+            <div>
+                <div class="label-justify">
+                    <label class="contrast">Name:</label>
+                </div>
+                <input class="input no-border">
+            </div>
+
+            <div>
+                <div class="label-justify">
+                    <label class="contrast">Email: </label>
+                </div>
+                    <input class="input no-border">
+            </div>
+
+                <button type="submit" class="btn btn-colour-secondary">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="contact contrast">
+        <h4>LET'S HEAR FROM YOU.</h4>
+        <h5>PHONE</h5>
+        <p>+ 61 3 9495 6589<br><br></p>
+        <h5>EMAIL</h5>
+        <p>contactus@hares-hyenas.com.au<br><br></p>
+        <h5>ADDRESS</h5>
+        <p>63 Johnston Street, Fitzroy VIC 3065<br><br></p>
+
+        <ul class="altclustercenter">
+            <li><img src="images/fb.svg" alt="Facebook" class="icon"></li>
+            <li><img src="images/twitter.svg" alt="Twitter" class="icon"></li>
+            <li><img src="images/instagram.svg" alt="Instagram" class="icon"></li>
+        </ul>
+
+        <h4>ONLINE SHOPPING.</h4>
+        <p><strong>Your account</strong><br><br><strong>Privacy, security, and ordering<br><br></strong></p>
+    </div>
+
+    <div class="ackn-country">
+        <h5>ACKNOWLEDGEMENT OF COUNTRY.</h5>
+        <p><em>Hares & Hyenas is based on the land of the Wurundjeri people of the Woiwurrung First Nation of the Kulin Nations.<br>We acknowledge Aboriginal and Torres Strait ownership of this place and pay respect to all its First Peoples. Sovereignty of the land was never ceded - always was, always will be Aboriginal land.</em></p>
+    </div>
+
+    <div class="copyright contrast">
+        <p>Design by Melana Uceda<br>(c) Hares & Hyenas 2021</p>
+    </div>
+</footer>
+</body>
+</html> 

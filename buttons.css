@@ -1,0 +1,164 @@
+/*
+.btn
+.btn-category ("big button")
+.btn-inactive
+
+.btn-text-big
+.btn-colour-primary (+states)
+.btn-colour-secondary (+states)
+*/
+
+button {
+    border: none;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1em 0.75em;
+    border-radius: 100px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 10.8em;
+    font-size: var(--text-base-size);
+    color: white;
+    margin: 5pt;
+  }
+
+  .btn-price {
+      width: 6em;
+      padding: 0.5em 0.75em;
+      font-size: var(--text-md);
+  }
+
+.btn-remove {
+    width: 6em;
+    padding: 0.5em 0.75em;
+    border: var(--disabled-border) 1px solid;
+    color: var(--disabled-border);
+}
+
+.btn-disabled {
+    background-color: var(--disabled);
+    border: var(--disabled-border) 1px solid;
+  }
+
+.btn-border-primary {
+      background-color: white;
+      border: var(--colour-primary) 1px solid;
+      color: var(--colour-primary);
+  }
+
+.btn-border-secondary {
+    background-color: white;
+    border: var(--colour-secondary) 1px solid;
+    color: var(--colour-secondary);
+}
+
+.btn-text-big{
+    font-size: var(--text-md);
+}
+  
+.btn-colour-primary {
+    background-color: var(--colour-primary);
+}
+
+    .btn-colour-primary:hover, .btn-border-primary:hover {
+        background-color: var(--colour-primary-hover);
+        color: white;
+    }
+
+    .btn-colour-primary:active, .btn-border-primary:active {
+        background-color: var(--colour-primary-active);
+    }
+
+    .btn-colour-primary:focus, .btn-border-primary:focus {
+        border: var(--colour-secondary-active) 0.2em solid;
+    }
+
+    /*.btn-colour-primary:disabled {
+        background-color: var(--disabled);
+        border: var(--disabled-border) 1px solid;
+    } Necessary? */
+
+.btn-colour-secondary {
+    background-color: var(--colour-secondary);
+}
+
+    .btn-colour-secondary:hover, .btn-border-secondary:hover, .category:hover {
+        background-color: var(--colour-secondary-hover);
+        color: white;
+    }
+
+    .btn-colour-secondary:active, .btn-border-secondary:active, .category:active {
+        background-color: var(--colour-secondary-active);
+    }
+
+    .btn-colour-secondary:focus, .btn-border-secondary:focus, .category:focus {
+        border: var(--colour-secondary-active) 0.2em solid;
+    }
+
+    .btn-category {
+        background-color: var(--colour-primary);
+        color: white;
+        transform: uppercase;
+        font-size: var(--text-lg);
+        width: 10.5em;
+        margin-bottom: 15pt;
+        padding: 0.75em 0.75em;
+    }
+        .btn-category:hover {
+            background-color: var(--colour-primary-hover);
+        }
+    
+        .btn-category:active {
+            background-color: var(--colour-primary-active);
+        }
+    
+        .btn-category:focus {
+            border: var(--colour-secondary-active) 0.2em solid;
+        }
+
+
+.btn-sm-primary {
+    color: white;
+    font-size: var(--text-base-size);
+    width: 8.5em;
+}
+    .btn-sm-primary:hover {
+        background-color: var(--colour-primary-hover);
+    }
+
+    .btn-sm-primary:active {
+        background-color: var(--colour-primary-active);
+    }
+
+    .btn-sm-primary:focus {
+        border: var(--colour-secondary-active) 0.23m solid;
+    }
+
+.dot {
+    width: 6pt;
+    height: 6pt;
+    border: white 1px solid;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin: 10pt 1.5pt 0pt 1.5pt;
+}
+
+.dot-selected {
+    background-color: white;
+}
+
+.dot-red {
+    border: var(--colour-primary) 1px solid;
+    margin: 0 10pt 0 15pt;
+}
+
+.dot-red-selected {
+    background-color: var(--colour-primary);
+}
