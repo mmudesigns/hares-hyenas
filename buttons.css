@@ -1,13 +1,3 @@
-/*
-.btn
-.btn-category ("big button")
-.btn-inactive
-
-.btn-text-big
-.btn-colour-primary (+states)
-.btn-colour-secondary (+states)
-*/
-
 button {
     border: none;
 }
@@ -78,11 +68,6 @@ button {
     .btn-colour-primary:focus, .btn-border-primary:focus {
         border: var(--colour-secondary-active) 0.2em solid;
     }
-
-    /*.btn-colour-primary:disabled {
-        background-color: var(--disabled);
-        border: var(--disabled-border) 1px solid;
-    } Necessary? */
 
 .btn-colour-secondary {
     background-color: var(--colour-secondary);

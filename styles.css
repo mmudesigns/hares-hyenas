@@ -34,16 +34,10 @@ html {
     font-family: var(--font-primary);
     color: var(--colour-primary);
     background-color: var(--background-coolour);
-    /*overflow-x: hidden;*/
-    /* margin-left: 2em;
-    margin-right: 2em; */
-    /*margin-top: 0;
-    margin-bottom: 0;*/
 }
 
 .wrapper {
     background-color: white;
-    /*z-index: -100;*/
     width: 100vw;
     max-width: 870pt;
     align-items: center;
@@ -55,7 +49,6 @@ html {
 }
 
   nav{
-    /*margin-top: 1em; */
     font-size: var(--text-md);
 }
 
@@ -103,12 +96,6 @@ a{
     color: inherit;
 }
 
-/*p{
-    /*width: 80vw;*/
-    /*margin-left: 10vw;
-    margin-right: 10vw;
-}*/
-
 .text-md {
     font-size: var(--text-md);
     margin-bottom: 20pt;
@@ -130,9 +117,6 @@ strong {
 .logo-big {
     width: 80vw;
     max-width: 255pt;
-    /*margin-top: 20pt;*/
-    /*margin-bottom: 20pt;*/
-    /*width: 24rem;*/
 }
 
 .icon {
@@ -169,7 +153,6 @@ strong {
     width: 100vw;
 }
 .ack-country p {
-    /*max-width: 350pt; /*this isn't working for some reason */
     font-size: 4rem;
 }
 
@@ -181,9 +164,6 @@ strong {
     font-size: 13vw;
     font-weight: 700;
     line-height: 20vw;
-    /*justify-content: left; */
-    /*padding-top: 10vw;*/
-    /*padding-left: 10vw;*/
     margin:0pt;
     text-align: left;
     z-index: 3;
@@ -218,10 +198,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*text-align: left; doesn't do anything*/
-    /*width: 240pt;*/
     margin: 0;
-    /*float: center;*/
 }
 
 input {
@@ -231,7 +208,6 @@ input {
     border-radius: 12px;
     height: 10pt;
     margin-bottom: 20pt;
-    /*display: inline-block;*/
     width: 240pt;
   }
 
@@ -326,9 +302,7 @@ input:active {
 .product-description h4 {
     font-weight: 400;
     font-size: var(--text-lg);
-    /*margin: 10vw;*/
     padding: 10pt 20pt;
-    /*margin-right: 20pt;*/
     max-width: 150pt;
     text-align: center;
     margin-bottom: 0;
@@ -431,22 +405,7 @@ input:active {
     line-height: 120pt;
     display: inline-block;
     vertical-align: middle;
-    /*display: inline-block;
-    box-sizing: border-box;
-    justify-content: center;
-    align-content: center;*/
 }
-
-/*ol {
-    list-style:lower-latin outside none;
-}*/
-
-
-/*#searchicon {
-    height: 5pt;
-    border-color: var(--colour-primary)
-    background-color: blue;
-}*/
 
 .hiddenmenu {
     display: none;

@@ -1,6 +1,5 @@
 /* FORMS */
 
-
 function processEmail() {
     var temp = location.search.substring(1).split("=");
       email = unescape(temp[1]);

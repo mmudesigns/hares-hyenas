@@ -3,8 +3,6 @@
     .hero-text {
         font-size: 10vw;
         line-height: 15vw;
-        /*font-size: 50pt;
-        line-height: 70pt;*/
     }
 
     .altlayer {
@@ -21,7 +19,6 @@
     }
 
     .hero img {
-        /*min-height: 50vh;*/
         object-fit: cover;
     }
 

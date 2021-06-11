@@ -1,7 +1,6 @@
 .stack {
   display: flex;
   flex-direction: column;
-  /*gap: 1em; */
   text-align: center;
   align-items: center; 
 }
@@ -9,7 +8,6 @@
 .altstack {
   display: flex;
   flex-direction: column;
-  /*gap: 1em; */
 }
 
 .header {
@@ -73,42 +71,15 @@ ol, ul {
   z-index: 100;
 }
 
-/*
-.menu {
-  display: flex;
-  flex-direction: row; 
-  transform: scale(1,0);
-  transform-origin: top center;
-  position: absolute;
-  top: 100%;
-  transition: 100ms ease-in-out 100ms;
-}
-*/
-
-
+ /* bring list items back upon hover */
 nav ul li:hover ul {
-  transform: scale(1,1); /* bring list items back upon hover */
+  transform: scale(1,1);
 }
-
-
-/*nav ul li:hover {
-  background-color: blue;
-}*/
-
-/* image at top of page + text overlay */
-/*.hero {
-    margin: 5px;
-    position: relative;
-    display: flex;
-    /*justify-content: center; */
-    /*align-items: center;
-} */
 
 .media {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*justify-content: left;*/
   align-items:flex-start;
 }
 
@@ -116,10 +87,7 @@ nav ul li:hover ul {
   top: 10vw;
   left: 10vw;
   position: absolute;
-  /*display: flex;*/
-  /*justify-content: center;*/
   align-items: center;
-  /*background-color: black;*/
 }
 
 .altlayer {
@@ -140,16 +108,10 @@ nav ul li:hover ul {
   align-items: center;
   align-self:center;
   flex-direction: column;
-  /*background-color: black;*/
   z-index: 4;
 }
 
-/*.visit {
-  align-items: flex-end;
-}*/
-
 .hero img {
-  /*display: inline-block;*/
   width: 100vw;
   object-fit: contain;
 }
@@ -159,7 +121,6 @@ nav ul li:hover ul {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-
 }
 
 .scrolling-wrapper-flexbox img {
@@ -171,7 +132,6 @@ nav ul li:hover ul {
   text-align: left;
   padding-left: 15pt;
   justify-content: center;
-  /*width: 100vw;*/
 }
 
 .products-displayalt {
@@ -179,14 +139,11 @@ nav ul li:hover ul {
 }
 
 .booklist {
-  /*flex-wrap:nowrap;*/
   height: 140pt;
-  /*object-fit: cover;*/
   overflow:auto;
   /*overflow-x: scroll;
-  overflow-y: hidden;*/
+  overflow-y: hidden; In theory, this should make it scroll horizontally*/
   white-space: nowrap;
-  /*max-width: 100vw;*/
 }
 
 .booklist img {
@@ -228,15 +185,12 @@ nav ul li:hover ul {
 
 .label-justify {
   justify-content:left;
-  /*align-items: flex-start;*/
   display: flex;
-  /*width: 100vw; this stops it from aligining with form box*/
 }
 
 .button-justify {
   justify-content: center;
   display: flex;
-  /*width: 100vw;*/
 }
 
 .left-justify {
@@ -244,7 +198,6 @@ nav ul li:hover ul {
   text-align: left;
   display: flex;
   align-items:flex-start;
-  /*width: 100vw;*/
 }
 
 .left-justify-title {
@@ -333,7 +286,6 @@ nav ul li:hover ul {
 
 .product-pic {
   width: 90vw;
-  /*width: 100vw;*/
   object-fit: cover;
   padding: 0pt 15pt 20pt 15pt;
 }

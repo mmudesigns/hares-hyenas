@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
 
 <body class="stack centre">
     <h1>Hares & Hyenas home</h1>
+    <!--HEADER HERE-->
     <header class="header">
         <nav class="cluster">
             <a href="index.html"><img src="images/logowhite.svg" alt="logo" class="logo"></a>
@@ -26,7 +28,6 @@
                 <li><a href="searchresult.html"><img src="images/search.svg" alt="search" class="icon"></a></li>
                 <li>
                     <form action="searchresult.html" method="GET" class="hiddenmenu">
-                        <!--<i><img src="images/search.svg" alt="search" id="searchicon"></i>-->
                         <input class="input no-border margin-below0" placeholder="Search for title, author, ISBN">
                     </form>
                 </li>
@@ -36,40 +37,68 @@
                 <li><a href="cart.html"><img src="images/cart.svg" alt="shopping cart" class="icon"></a></li>
                 <li><img src="images/burger.svg" alt="menu button" class="icon burger">
                     <p class="text-md contrast hiddenmenu margin-below0">Menu <strong>V</strong></p>
-                        <!--<img src="images/point down.svg" alt="point down" class="iconalt">-->
                     <ul class="menu contrast">
-                        <!-- don't forget the x! -->
-                        <li><h3>SHOP.</h3>
+                        <li>
+                            <h3>SHOP.</h3>
                             <ul>
-                                <li><a href="#"><p class="menu-subhead">Books</p></a></li>
-                                    <ul>
-                                        <li><a href="#"><p class="menu-item">Fiction</p></a></li>
-                                        <li><a href="#"><p class="menu-item">Nonfiction</p></a></li>
-                                        <li><a href="#"><p class="menu-item">Children & Young Adult</p></a></li>
-                                        <li><a href="#"><p class="menu-item">Comics</p></a></li>
-                                        <li><a href="#"><p class="menu-item">Just Queer</p></a></li>
-                                    </ul>
-                                <li><a href="#"><p class="menu-subhead">CD/Vinyl</p></a></li>
-                                <li><a href="#"><p class="menu-subhead">DVD</p></a></li>
-                                <li><a href="#"><p class="menu-subhead">Merchandise</p></a></li>
-                            </ul></li>
-                        <li><a href="#"><h3>VISIT & CONTACT.</h3></a></li>
-                        <li><a href="#"><h3>BOOK OUR VENUE.</h3></a></li>
-                        <li><a href="#"><h3>EVENTS.</h3></a></li>
-                        <li><a href="signinorup.html"><h3>YOUR ACCOUNT.</h3></a></li>
+                                <li><a href="#">
+                                        <p class="menu-subhead">Books</p>
+                                    </a></li>
+                                <ul>
+                                    <li><a href="#">
+                                            <p class="menu-item">Fiction</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p class="menu-item">Nonfiction</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p class="menu-item">Children & Young Adult</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p class="menu-item">Comics</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p class="menu-item">Just Queer</p>
+                                        </a></li>
+                                </ul>
+                                <li><a href="#">
+                                        <p class="menu-subhead">CD/Vinyl</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <p class="menu-subhead">DVD</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <p class="menu-subhead">Merchandise</p>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">
+                                <h3>VISIT & CONTACT.</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>BOOK OUR VENUE.</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>EVENTS.</h3>
+                            </a></li>
+                        <li><a href="signinorup.html">
+                                <h3>YOUR ACCOUNT.</h3>
+                            </a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+    <!--HEADER END-->
 
     <div class="wrapper">
-    <div class="hero">
-        <div class="media">
+        <div class="hero">
+            <div class="media">
                 <p class="altlayer hero-text contrast">BOOKS.<br>VENUE.<br>CAFE.<br>BAR.</p>
-            <div class="visit">
-                <a class="btn btn-text-big btn-colour-primary" href="#">Visit us now</a>
-                <!--<div class="carousel-dots">
+                <div class="visit">
+                    <a class="btn btn-text-big btn-colour-primary" href="#">Visit us now</a>
+                    <!-- These would be for if there was more than one home page image: 
+                    <div class="carousel-dots">
                     <ul>
                         <li><div class="dot dot-selected"></div></li>
                         <li><div class="dot"></div></li>
@@ -77,116 +106,122 @@
                         <li><div class="dot"></div></li>
                     </ul>
                 </div>-->
-            </div>
-            <div class="overlay layer"></div>
-            <img src="images/cafeview.jpg" alt="Person drinking coffee at the Hares & Hyenas book shop" id="hero-image-small">
-            <img src="images/cafeviewbig.jpg" alt="Person drinking coffee at the Hares & Hyenas book shop" id="hero-image-big">
-        </div>
-    </div>
-        <!--<img src="images/cafeview.jpg" alt="Person drinking coffee at the Hares & Hyenas book shop"> <!--do all the fancy image things. How are you going to resize for responsiveness?-->
-
-
-    <div class="shop-description altclustercenter">
-        <img src="images/logogrey.svg" alt="logo" class="logo-big">
-        <h2>A Melbourne community bookshop specialising in queer titles.</h2>
-    </div>
-    
-    <div class="centre">
-        <div class="products-display">
-            <h3>NEW RELEASES</h3>
-            <div class="cluster booklist">
-                <div><a href="product.html"><img src="images/angelmage.jpg" alt="Angel Mage cover"></a></div>
-                <div><a href="product.html"><img src="images/100boyfriends.jpg" alt="100 Boyfriends cover"></a></div>
-                <div><a href="product.html"><img src="images/aintiawoman.jpg" alt="Ain't I a Woman cover"></a></div>
-                <div><a href="product.html"><img src="images/abcwhatcanibe.jpg" alt="ABC What Can I Be cover"></a></div>
-                <div><a href="product.html"><img src="images/afieldguidetointernetboyfriends.jpg" alt="A Field Guide to Internet Boyfriends cover"></a></div>
-                <div><a href="product.html"><img src="images/asongforyou.jpg" alt="A Song for You cover"></a></div>
-                <div><a href="product.html"><img src="images/acomplicatedlovestorysetinspace.jpg" alt="A Complicated Love Story Set in Space cover"></a></div>
-                <div><a href="product.html"><img src="images/always more love.jpg" alt="Always More Love cover"></a></div>
-                <div><a href="product.html"><img src="images/anabcofequality.jpg" alt="An ABC of Equality cover"></a></div>
-                <div><a href="product.html"><img src="images/artistyrant.jpg" alt="Art is a Tyrant cover"></a></div>
-            </div>
-            <div class="button-justify">
-                <a class="btn btn-colour-secondary">View all</a>
+                </div>
+                <div class="overlay layer"></div>
+                <img src="images/cafeview.jpg" alt="Person drinking coffee at the Hares & Hyenas book shop"
+                    id="hero-image-small">
+                <img src="images/cafeviewbig.jpg" alt="Person drinking coffee at the Hares & Hyenas book shop"
+                    id="hero-image-big">
             </div>
         </div>
-    </div>
 
-    <div class="centre">
-        <div class="products-display">
-            <h3>BESTSELLERS</h3>
-            <!--images that you can scroll?-->
-            <ul class="cluster booklist">
-                <li><a href="product.html"><img src="images/christodora.jpg" alt="Christodora cover"></a></li>
-                <li><a href="product.html"><img src="images/fightingforourlives.jpg" alt="Fighting For Our Lives cover"></a></li>
-                <li><a href="product.html"><img src="images/findme.jpg" alt="Find Me cover"></a></li>
-                <li><a href="product.html"><img src="images/the-devils-grip-9781760851187_hr.jpg" alt="The Devil's Grip cover"></a></li>
-                <li><a href="product.html"><img src="images/less.jpg" alt="Less cover"></a></li>
-                <li><a href="product.html"><img src="images/paul-takes-the-form-of-a-mortal-girl-1.jpg" alt="Paul Takes the Form of a Mortal Girl cover"></a></li>
-                <li><a href="product.html"><img src="images/kindred-12-queer-loveozya-stories.jpg" alt="Kindred: 12 Queer LoveOzYA Stories cover"></a></li>
-                <li><a href="product.html"><img src="images/inventedlives.jpg" alt="Invented Lives cover"></a></li>
-                <li><a href="product.html"><img src="images/into.jpg" alt="Into cover"></a></li>
-                <li><a href="product.html"><img src="images/hood.jpg" alt="Hood cover"></a></li>
-            </ul>
-            <div class="button-justify">
-                <a class="btn btn-colour-secondary">View all</a>
+
+        <div class="shop-description altclustercenter">
+            <img src="images/logogrey.svg" alt="logo" class="logo-big">
+            <h2>A Melbourne community bookshop specialising in queer titles.</h2>
+        </div>
+
+        <div class="centre">
+            <div class="products-display">
+                <h3>NEW RELEASES</h3>
+                <div class="cluster booklist">
+                    <div><a href="product.html"><img src="images/angelmage.jpg" alt="Angel Mage cover"></a></div>
+                    <div><a href="product.html"><img src="images/100boyfriends.jpg" alt="100 Boyfriends cover"></a>
+                    </div>
+                    <div><a href="product.html"><img src="images/aintiawoman.jpg" alt="Ain't I a Woman cover"></a></div>
+                    <div><a href="product.html"><img src="images/abcwhatcanibe.jpg" alt="ABC What Can I Be cover"></a>
+                    </div>
+                    <div><a href="product.html"><img src="images/afieldguidetointernetboyfriends.jpg"
+                                alt="A Field Guide to Internet Boyfriends cover"></a></div>
+                    <div><a href="product.html"><img src="images/asongforyou.jpg" alt="A Song for You cover"></a></div>
+                    <div><a href="product.html"><img src="images/acomplicatedlovestorysetinspace.jpg"
+                                alt="A Complicated Love Story Set in Space cover"></a></div>
+                    <div><a href="product.html"><img src="images/always more love.jpg" alt="Always More Love cover"></a>
+                    </div>
+                    <div><a href="product.html"><img src="images/anabcofequality.jpg"
+                                alt="An ABC of Equality cover"></a></div>
+                    <div><a href="product.html"><img src="images/artistyrant.jpg" alt="Art is a Tyrant cover"></a></div>
+                </div>
+                <div class="button-justify">
+                    <a class="btn btn-colour-secondary">View all</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="centre">
-        <div class="products-display">
-            <h3>TOP QUEER FICTION</h3>
-            <!--images that you can scroll?-->
-            <ul class="cluster booklist">
-                <li><a href="product.html"><img src="images/girlwomanother.jpg" alt="Girl, Woman, Other cover"></a></li>
-                <li><a href="product.html"><img src="images/a-room-of-ones-own-virginia-woolf-9780141183534.jpg" alt="A Room of One's Own cover"></a></li>
-                <li><a href="product.html"><img src="images/adultonset.jpg" alt="Adult Onset cover"></a></li>
-                <li><a href="product.html"><img src="images/a-guarded-heart.jpg" alt="A Guarded Heart cover"></a></li>
-                <li><a href="product.html"><img src="images/paul-takes-the-form-of-a-mortal-girl-1.jpg" alt="Paul Takes the Form of a Mortal Girl cover"></a></li>
-                <li><a href="product.html"><img src="images/adam.jpg" alt="Adam cover"></a></li>
-                <li><a href="product.html"><img src="images/ayearofmarvellousways.jpg" alt="A Year of Marvellous Ways cover"></a></li>
-                <li><a href="product.html"><img src="images/alovelywaytoburn.jpg" alt="A Lovely Way to Burn cover"></a></li>
-                <li><a href="product.html"><img src="images/alovestoryforbewilderedgirls.jpg" alt="A Love Story for Bewildered Girls cover"></a></li>
-                <li><a href="product.html"><img src="images/52pickup.jpg" alt="52 Pickup cover"></a></li>
-            </ul>
-            <div class="button-justify">
-                <a class="btn btn-colour-secondary">View all</a>
+        <div class="centre">
+            <div class="products-display">
+                <h3>BESTSELLERS</h3>
+                <ul class="cluster booklist">
+                    <li><a href="product.html"><img src="images/christodora.jpg" alt="Christodora cover"></a></li>
+                    <li><a href="product.html"><img src="images/fightingforourlives.jpg"
+                                alt="Fighting For Our Lives cover"></a></li>
+                    <li><a href="product.html"><img src="images/findme.jpg" alt="Find Me cover"></a></li>
+                    <li><a href="product.html"><img src="images/the-devils-grip-9781760851187_hr.jpg"
+                                alt="The Devil's Grip cover"></a></li>
+                    <li><a href="product.html"><img src="images/less.jpg" alt="Less cover"></a></li>
+                    <li><a href="product.html"><img src="images/paul-takes-the-form-of-a-mortal-girl-1.jpg"
+                                alt="Paul Takes the Form of a Mortal Girl cover"></a></li>
+                    <li><a href="product.html"><img src="images/kindred-12-queer-loveozya-stories.jpg"
+                                alt="Kindred: 12 Queer LoveOzYA Stories cover"></a></li>
+                    <li><a href="product.html"><img src="images/inventedlives.jpg" alt="Invented Lives cover"></a></li>
+                    <li><a href="product.html"><img src="images/into.jpg" alt="Into cover"></a></li>
+                    <li><a href="product.html"><img src="images/hood.jpg" alt="Hood cover"></a></li>
+                </ul>
+                <div class="button-justify">
+                    <a class="btn btn-colour-secondary">View all</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--<div class="categories">
-        <div class="media">
-                <p class="contrast">BOOKS</p>
-            <div class="visit">
+        <div class="centre">
+            <div class="products-display">
+                <h3>TOP QUEER FICTION</h3>
+                <ul class="cluster booklist">
+                    <li><a href="product.html"><img src="images/girlwomanother.jpg" alt="Girl, Woman, Other cover"></a>
+                    </li>
+                    <li><a href="product.html"><img src="images/a-room-of-ones-own-virginia-woolf-9780141183534.jpg"
+                                alt="A Room of One's Own cover"></a></li>
+                    <li><a href="product.html"><img src="images/adultonset.jpg" alt="Adult Onset cover"></a></li>
+                    <li><a href="product.html"><img src="images/a-guarded-heart.jpg" alt="A Guarded Heart cover"></a>
+                    </li>
+                    <li><a href="product.html"><img src="images/paul-takes-the-form-of-a-mortal-girl-1.jpg"
+                                alt="Paul Takes the Form of a Mortal Girl cover"></a></li>
+                    <li><a href="product.html"><img src="images/adam.jpg" alt="Adam cover"></a></li>
+                    <li><a href="product.html"><img src="images/ayearofmarvellousways.jpg"
+                                alt="A Year of Marvellous Ways cover"></a></li>
+                    <li><a href="product.html"><img src="images/alovelywaytoburn.jpg"
+                                alt="A Lovely Way to Burn cover"></a></li>
+                    <li><a href="product.html"><img src="images/alovestoryforbewilderedgirls.jpg"
+                                alt="A Love Story for Bewildered Girls cover"></a></li>
+                    <li><a href="product.html"><img src="images/52pickup.jpg" alt="52 Pickup cover"></a></li>
+                </ul>
+                <div class="button-justify">
+                    <a class="btn btn-colour-secondary">View all</a>
+                </div>
             </div>
-            <div></div>
-            <img src="images/books.jpg" alt="Book shelf">
         </div>
-    </div>-->
 
-    <h3 class="products-display left-justify">CATEGORIES</h3>
-    <div class="button-justify">
-    <div class="categories altclustercenter contrast xxl margin-below">
-        <a class="category" href="#">BOOKS</a>
-        <a class="category" href="#">CD/VINYL</a>
-        <a class="category" href="#">DVD</a>
-        <a class="category" href="#">MERCH</a>
+        <h3 class="products-display left-justify">CATEGORIES</h3>
+        <div class="button-justify">
+            <div class="categories altclustercenter contrast xxl margin-below">
+                <a class="category" href="#">BOOKS</a>
+                <a class="category" href="#">CD/VINYL</a>
+                <a class="category" href="#">DVD</a>
+                <a class="category" href="#">MERCH</a>
+            </div>
+        </div>
+
+        <div class="button-justify">
+            <div class="altclustercenter margin-below">
+                <a class="btn btn-category" href="#">VISIT & CONTACT.</a>
+                <a class="btn btn-category" href="#">BOOK OUR VENUE.</a>
+                <a class="btn btn-category" href="#">EVENTS.</a>
+            </div>
+        </div>
+
     </div>
-</div>
-
-<div class="button-justify">
-    <div class="altclustercenter margin-below">
-        <a class="btn btn-category" href="#">VISIT & CONTACT.</a>
-        <a class="btn btn-category" href="#">BOOK OUR VENUE.</a>
-        <a class="btn btn-category" href="#">EVENTS.</a>
-    </div>
-</div>
 
     </div>
-
-</div>
 
     <footer class="stack footer">
         <div class="newsletter contrast">
@@ -204,39 +239,42 @@
                     <div class="label-justify">
                         <label class="contrast">Email: </label>
                     </div>
-                        <input class="input no-border">
+                    <input class="input no-border">
                 </div>
 
-                    <button type="submit" class="btn btn-colour-secondary">Subscribe</button>
+                <button type="submit" class="btn btn-colour-secondary">Subscribe</button>
             </form>
         </div>
 
         <div class="contact contrast altclustercenter align-items-top">
             <div class="margin15pt">
-            <h4>LET'S HEAR FROM YOU.</h4>
-            <h5>PHONE</h5>
-            <p>+ 61 3 9495 6589<br><br></p>
-            <h5>EMAIL</h5>
-            <p>contactus@hares-hyenas.com.au<br><br></p>
-            <h5>ADDRESS</h5>
-            <p>63 Johnston Street, Fitzroy VIC 3065<br><br></p>
+                <h4>LET'S HEAR FROM YOU.</h4>
+                <h5>PHONE</h5>
+                <p>+ 61 3 9495 6589<br><br></p>
+                <h5>EMAIL</h5>
+                <p>contactus@hares-hyenas.com.au<br><br></p>
+                <h5>ADDRESS</h5>
+                <p>63 Johnston Street, Fitzroy VIC 3065<br><br></p>
 
-            <ul class="altclustercenter">
-                <li><img src="images/fb.svg" alt="Facebook" class="icon"></li>
-                <li><img src="images/twitter.svg" alt="Twitter" class="icon"></li>
-                <li><img src="images/instagram.svg" alt="Instagram" class="icon"></li>
-            </ul>
-        </div>
+                <ul class="altclustercenter">
+                    <li><img src="images/fb.svg" alt="Facebook" class="icon"></li>
+                    <li><img src="images/twitter.svg" alt="Twitter" class="icon"></li>
+                    <li><img src="images/instagram.svg" alt="Instagram" class="icon"></li>
+                </ul>
+            </div>
 
-        <div class="margin15pt">
-            <h4>ONLINE SHOPPING.</h4>
-            <p><strong>Your account</strong><br><br><strong>Privacy, security, and ordering<br><br></strong></p>
-        </div>
+            <div class="margin15pt">
+                <h4>ONLINE SHOPPING.</h4>
+                <p><strong>Your account</strong><br><br><strong>Privacy, security, and ordering<br><br></strong></p>
+            </div>
         </div>
 
         <div class="ackn-country">
             <h5>ACKNOWLEDGEMENT OF COUNTRY.</h5>
-            <p><em>Hares & Hyenas is based on the land of the Wurundjeri people of the Woiwurrung First Nation of the Kulin Nations.<br>We acknowledge Aboriginal and Torres Strait ownership of this place and pay respect to all its First Peoples. Sovereignty of the land was never ceded - always was, always will be Aboriginal land.</em></p>
+            <p><em>Hares & Hyenas is based on the land of the Wurundjeri people of the Woiwurrung First Nation of the
+                    Kulin Nations.<br>We acknowledge Aboriginal and Torres Strait ownership of this place and pay
+                    respect to all its First Peoples. Sovereignty of the land was never ceded - always was, always will
+                    be Aboriginal land.</em></p>
         </div>
 
         <div class="copyright contrast">
@@ -244,4 +282,5 @@
         </div>
     </footer>
 </body>
-</html> 
+
+</html>
